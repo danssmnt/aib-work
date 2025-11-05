@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conversor de Temperatura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="icon" type="image/svg" href="imagens/favicon.svg">
+    <script src="js/script.js"></script>
+</head>
+<body id="bg" style="background-color: #252525;">
+    <h1>Conversor de Temperatura</h1>
+    <hr>
+
+    <form class="form1" name="Conversor">
+        <input type="number" id="temp_input" oninput="temp_update()" onkeypress="return isDecimalKey(event)">
+        <select id="unidade_temp_input" oninput="unit_update(); temp_update()">
+            <option>ºC</option>
+            <option>ºF</option>
+            <option>ºK</option>
+        </select>
+        <a>=</a>
+        <input id="temp_output" disabled>
+        <select id="unidade_temp_output" oninput="temp_update()">
+            <option>ºC</option>
+            <option>ºF</option>
+            <option>ºK</option>
+        </select>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('temp_output').value)">
+            <img src="imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

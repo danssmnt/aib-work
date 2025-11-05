@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Semáforo</title>
+    <link rel="icon" type="image/webp" href="Imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">Semáforo</h1>
+    <div class="semaforo">
+        <div class="semaforo_buttons">
+            <button id="toggle_btn" onclick="semaforo.toggle()">Ligar</button>
+            <button id="red_btn" onclick="semaforo.set_red_signal()">Vermelho</button>
+            <button id="yellow_btn" onclick="semaforo.set_yellow_signal()">Amarelo</button>
+            <button id="green_btn" onclick="semaforo.set_green_signal()">Verde</button>
+        </div>
+        <div class="semaforo_main">
+            <div class="light" id="redlight"></div>
+            <div class="light" id="yellowlight"></div>
+            <div class="light" id="greenlight"></div>
+        </div>
+    </div>
+</body>
+</html>

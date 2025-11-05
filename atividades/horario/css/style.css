@@ -1,0 +1,76 @@
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* align-items: center; */
+    gap: 2vw;
+    margin-left: 10%;
+}
+
+h1 {
+    font-family: Inter;
+    text-align: center;
+}
+
+.horario {
+    border: 0.3vh solid black;
+    border-collapse: collapse;
+    font-family: Inter;
+    width: auto
+}
+
+.horario .top_row td {
+    padding: 2vh 3vh 2vh 3vh;
+    font-weight: bolder;
+    text-align: center;
+    width: 10vh;
+    height: 4vh;
+}
+
+.horario td {
+    border-left: 0.3vh solid #000;
+    border-right: 0.3vh solid #000;
+    border-bottom: 0.3vh solid #000;
+    padding: 0.6vh 1vh 0.6vh 1vh;
+}
+
+.horario td:first-child {
+    border-left: none;
+    width: 5vh;
+}
+
+.horario td:last-child {
+    border-right: none;
+}
+
+.horario_row td {
+    white-space: pre-line;
+}
+
+.horario_row .horas {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.disciplina {
+    font-size: 1.6vh;
+}
+
+.disciplina_lista {
+    border: 0.3vh solid black;
+    border-collapse: collapse;
+    font-family: Inter;
+    width: 70%;
+}
+
+.disciplina_lista li {
+    padding-top: 2vh;
+}
+
+.disciplina_lista img {
+    width: 100%;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../fonts/Inter/Inter-VariableFont_opsz,wght.ttf);
+}
