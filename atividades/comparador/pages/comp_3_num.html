@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Comparador de 3 Números</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <h1>Comparador de 3 Números</h1>
+    <hr>
+    <form class="form1" name="Input">
+        <h2>Input</h2>
+        <label>Número 1</label>
+        <input type="number" placeholder="Núm 1" id="num_1_input" oninput="comparador3num_update()" onkeypress="return isDecimalKey(event)">
+        <div style="margin: 2vh;"></div>
+        <label>Número 2</label>
+        <input type="number" placeholder="Núm 2" id="num_2_input" oninput="comparador3num_update()" onkeypress="return isDecimalKey(event)">
+        <div style="margin: 2vh;"></div>
+        <label>Número 3</label>
+        <input type="number" placeholder="Núm 3" id="num_3_input" oninput="comparador3num_update()" onkeypress="return isDecimalKey(event)">
+        <div style="margin: 2vh;"></div>
+    </form>
+    <hr>
+    <form class="form1" name="Output">
+        <h2>Output</h2>
+        <label>Maior</label>
+        <input type="text" id="maior_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('maior_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Menor</label>
+        <input type="text" id="menor_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('menor_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Todos Iguais?</label>
+        <img src="../imagens/checkbox_off.png" id="iguais_check">
+        <div style="margin: 2vh;"></div>
+        <label>Todos Diferentes?</label>
+        <img src="../imagens/checkbox_off.png" id="diff_check">
+    </form>
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

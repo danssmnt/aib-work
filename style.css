@@ -21,14 +21,14 @@ body h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -40%);
     grid-template-columns: repeat(2, auto);
 }
 
 .button_pages button 
 {
     width: 40vw;
-    height: 20vh;
+    height: 30vh;
     background-color: #181818;
     border: 2px #101010;
     font: inherit;
