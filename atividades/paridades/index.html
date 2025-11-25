@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paridade de um Número</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="icon" type="image/webp" href="imagens/favicon.webp">
+    <script src="js/script.js"></script>
+</head>
+<body id="PageBody">
+    <h1>Paridade de um Número</h1>
+    <hr>
+    <form class="form1" name="Input">
+        <h2>Input</h2>
+        <label>Número</label>
+        <input type="number" placeholder="Núm." id="NumInput" oninput="inputUpdate()" onkeypress="return isNumberKey(event)">
+        <div style="margin: 4vh;"></div>
+    </form>
+    <hr>
+    <form class="form1" name="Output">
+        <h2>Output</h2>
+        <label>Par?</label>
+        <img src="../imagens/checkbox_off.png" id="ParCheckbox">
+        <div style="margin: 2vh;"></div>
+        <label>Impar?</label>
+        <img src="../imagens/checkbox_off.png" id="ImparCheckbox">
+    </form>
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>
