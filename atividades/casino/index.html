@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Casino 100% Legítimo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+     <link rel="icon" type="image/svg" href="images/favicon.svg">
+    <script src="js/main.js"></script>
+</head>
+<body id="pageBody">
+    <div class="pageHeader">
+        <h1>Casino 100% Legítimo</h1>
+        <div class="headerSaldo">
+            <label id="headerSaldoVal">Saldo: 100€</label>
+        </div>
+        <button id="headerConfigBtn" onclick="screenToggle('definicoesMenu', true)">
+            <img src="images/icon_settings.svg">
+        </button>
+    </div>
+    
+    <div class="apostaPlay" id="apostaPlay">
+        <h1 id="apostaPlayName">Olá, Jogador</h1>
+        <h1>Estás pronto(a) para apostar?</h1>
+        <button onclick="screenToggle('apostaSetup', true)">SIM</button>
+    </div>
+
+    <div id="apostaSetup" class="pageMenu">
+        <h1>Definições da Aposta</h1>
+        <button class="pageMenuCloseBtn" onclick="screenToggle('apostaPlay', true)">
+            <img src="images/icon_close.svg">
+        </button>
+        <div class="pageMenuLabelNum">
+            <h2>Número para adivinhar</h2>
+            <div class="pageMenuLabelUntil">
+                <input id="apostaSetupNumLow" onfocusout="apostaSetupNumsUpdate()" onkeypress="return isNumberKey(event)">
+                <label>até</label>
+                <input id="apostaSetupNumHigh" onfocusout="apostaSetupNumsUpdate()" onkeypress="return isNumberKey(event)">
+            </div>
+        </div>
+        <div class="pageMenuLabelNum">
+            <h2>Apostará</h2>
+            <div class="pageMenuLabelValUnit">
+                <input id="apostaSetupSaldo" onfocusout="apostaSetupValue()" onkeypress="return isDecimalKey(event)">
+                <label>€</label>
+            </div>
+        </div>
+        <div class="pageMenuLabelCheck">
+            <h2>Aposta com dicas?</h2>
+            <input type="checkbox" id="apostaSetupDicasMain">
+        </div>
+        <button class="pageMenuSubmitBtn" onclick="apostaGameStart()">Começar!</button>
+    </div>
+
+    <div id="apostaGame" class="pageJogo">
+        <div id="apostaGameInput" class="pageJogoInput">
+            <input id="apostaGameInputMain" placeholder="Número de % a %" onfocusout="apostaGameInputUpdate()" onkeypress="return isNumberKey(event)">
+            <button id="apostaGameInputButton" class="pageJogoInputButton" onclick="apostaGameGuess()">
+                <img src="images/icon_enter.svg">
+            </button>
+        </div>
+        <label id="apostaGameTentativas" class="pageJogoLabel">Tentativa % de %</label>
+
+        <div id="apostaGameDica" class="pageJogoHelp">
+            <img src="images/icon_hint.svg">
+            <label id="apostaGameDicaLabel">Número é par</label>
+        </div>
+
+        <table id="apostaGameLogTable" class="pageJogoTable">
+            <tr class="pageJogoTableHeader">
+                <td>Tentativa</td>
+                <td>Número</td>
+                <td>Estado</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="apostaWin" class="pageWin">
+        <h1>Epá, parabéns pá!</h1>
+        <label id="apostaWinPlayerName" class="pageWinName">Miguel Melo,</label>
+        <label>acabaste de ganhar:</label>
+        <h2 id="apostaWinDinheiroGanho">100.00€</h2>
+        <label>O teu saldo é agora:</label>
+        <h2 id="apostaWinSaldo">200.00€</h2>
+        <button class="pageWinResgatar" onclick="screenToggle('apostaPlay', true)">Continuar</button>
+    </div>
+
+    <div id="apostaLose" class="pageWin">
+        <h1>Tenta de novo!</h1>
+        <label id="apostaLosePlayerName" class="pageWinName">Miguel Melo,</label>
+        <label>acabaste de perder:</label>
+        <h2 id="apostaLoseDinheiroPerdido">100.00€</h2>
+        <label>O teu saldo é agora:</label>
+        <h2 id="apostaLoseSaldo">200.00€</h2>
+        <button class="pageWinResgatar" onclick="screenToggle('apostaPlay', true)">Tentar</button>
+    </div>
+
+    <div id="definicoesMenu" class="pageDef">
+        <h1>Definições</h1>
+        <h2>Gerais</h2>
+        <button class="pageDefCloseBtn" onclick="screenGotoPrevious()">
+            <img src="images/icon_close.svg">
+        </button>
+        <div class="pageDefName">
+            <label>Nome</label>
+            <input placeholder="Munt" id="pageDefNameInput">
+            <button onclick="pageDefNameUpdate()">
+                <img src="images/icon_enter.svg">
+            </button>
+        </div>
+        <div style="margin-top: 6vh;"></div>
+        <h2>Definições de Saldo</h2>
+        <div class="pageDefLabelValue">
+            <label>Carregar (clica nas notas)</label>
+        </div>
+        <div class="pageDefGridNotes">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(5)" src="images/eurobanknotes/euro5.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(10)" src="images/eurobanknotes/euro10.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(20)" src="images/eurobanknotes/euro20.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(50)" src="images/eurobanknotes/euro50.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(100)" src="images/eurobanknotes/euro100.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(200)" src="images/eurobanknotes/euro200.webp">
+            <img class="pageDefGridElem" onclick="pageDefCarregarSaldo(500)" src="images/eurobanknotes/euro500.webp">
+        </div>
+        <div class="pageDefLabelValue">
+            <label>Limite Máximo</label>
+            <div class="pageDefLabelValueUnit">
+                <input placeholder="1000" id="pageDefSaldoLimite">
+                <label>€</label>
+            </div>
+            <button onclick="pageDefAtualizarLimiteSaldo()">
+                <img src="images/icon_enter.svg">
+            </button>
+        </div>
+    </div>
+
+    <div class="pageFooter">
+        <label>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,634 @@
+body
+{
+    margin: 0%;
+    background-color: #16212c;
+    color: white;
+    font-family: 'Momo Trust Sans';
+    transition: 1s;
+}
+
+hr
+{
+    margin: 0;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+/* #region .pageHeader */
+
+.pageHeader
+{
+    position: relative;
+    height: 10vh;
+    background-color: #0d141b;
+}
+
+.pageHeader h1
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pageHeader .headerSaldo
+{
+    font-size: 125%;
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+}
+
+.pageHeader button
+{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    background-color: #111922;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.pageHeader button:hover
+{
+    background-color: #0d141b;
+}
+
+.pageHeader button img
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* #endregion */
+
+/* #region .apostaPlay */
+
+.apostaPlay
+{
+    position: absolute;
+    height: 60vh;
+    width: 40vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #0d141b;
+    border: 5px solid #080e14;
+}
+
+.apostaPlay h1
+{
+    font-size: 2vw;
+}
+
+.apostaPlay button
+{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1d65b8;
+    color: white;
+    border: 0;
+    font: inherit;
+    font-weight: bolder;
+    font-size: 8vw;
+}
+
+.apostaPlay button:hover
+{
+    background-color: #175194;
+}
+
+/* #endregion */
+
+/* #region .pageMenu */
+
+.pageMenu
+{
+    position: absolute;
+    width: 30vw;
+    margin-top: 2%;
+    padding: 10px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: #0d141b;
+    border: 5px solid #080e14;
+}
+
+.pageMenu .pageMenuCloseBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    background-color: #f73535;
+}
+
+.pageMenu .pageMenuCloseBtn:hover
+{
+    background-color: #cd2b2b;
+}
+
+.pageMenu .pageMenuCloseBtn img
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pageMenu .pageMenuLabelNum
+{
+    text-align: center;
+}
+
+.pageMenu .pageMenuLabelNum h2
+{
+    margin-bottom: 1%;
+}
+
+.pageMenu .pageMenuLabelNum .pageMenuLabelUntil input
+{
+    width: 70px;
+    height: 40px;
+    font-size: 150%;
+    border: 0;
+    background-color: #060a0e;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    font: inherit;
+}
+
+.pageMenu .pageMenuLabelNum .pageMenuLabelUntil label
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.pageMenu .pageMenuLabelNum .pageMenuLabelValUnit input
+{
+    width: 100px;
+    height: 40px;
+    font-size: 150%;
+    border: 0;
+    background-color: #060a0e;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    font: inherit;
+}
+
+.pageMenu .pageMenuLabelNum .pageMenuLabelValUnit label
+{
+    font-size: large;
+}
+
+.pageMenu .pageMenuLabelCheck
+{
+    margin: 30px;
+    text-align: center;
+}
+
+.pageMenu .pageMenuLabelCheck input[type="checkbox"]
+{
+    transform: scale(2);
+    transform-origin: center;
+    margin: 4px;
+}
+
+.pageMenu .pageMenuSubmitBtn
+{
+    width: 40%;
+    height: 100px;
+    background-color: #1d65b8;
+    color: white;
+    border: 0;
+    font: inherit;
+    font-weight: bolder;
+    font-size: 2vw;
+    
+    margin-bottom: 5%
+}
+
+.pageMenu .pageMenuSubmitBtn:hover
+{
+    background-color: #175194;
+}
+
+/* #endregion */
+
+/* #region .pageJogo */
+
+.pageJogo
+{
+    position: absolute;
+    width: 25vw;
+    margin-top: 2%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d141b;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 5px solid #080e14;
+}
+
+.pageJogo .pageJogoInput
+{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 10vh;
+}
+
+.pageJogo .pageJogoInput input
+{
+    background-color: #060a0e;
+    color: white;
+    border: 0;
+    width: 85%;
+    height: 100%;
+    font: inherit;
+    font-size: 1.5vw;
+    background-color: #060a0e;
+    color: rgb(255, 255, 255);
+    padding-left: 1vw;
+}
+
+.pageJogo .pageJogoInput .pageJogoInputButton
+{
+    width: 20%;
+    height: 100%;
+    background-color: #1d65b8;
+    color: white;
+    border: 0;
+    font: inherit;
+    font-weight: bolder;
+    font-size: 4vw;
+    border-radius: 10%;
+}
+
+.pageJogo .pageJogoInput .pageJogoInputButton:hover
+{
+    background-color: #175194;
+}
+
+.pageJogo .pageJogoInput .pageJogoInputButton:disabled
+{
+    background-color: #103866cd;
+    cursor: default;
+}
+
+.pageJogo .pageJogoInput .pageJogoInputButton img
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 7.5%;
+}
+
+.pageJogo .pageJogoHelp
+{
+    margin-top: 3vh;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: #060a0e;
+    font-size: large;
+}
+
+.pageJogo .pageJogoHelp img
+{
+    height: 75%;
+    margin-right: 5%;
+    padding-left: 10px;
+}
+
+.pageJogo .pageJogoTable
+{
+    margin-top: 3vh;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.pageJogo .pageJogoTable .pageJogoTableHeader td
+{
+    padding: 2vh 3vh 2vh 3vh;
+    font-weight: bolder;
+    font-size: 1vw;
+    text-align: center;
+    background-color: #060a0e;
+}
+
+.pageJogo .pageJogoTable td {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #080e14;
+}
+
+.pageJogo .pageJogoTable td:first-child {
+    border-left: none;
+}
+
+.pageJogo .pageJogoTable td:last-child {
+    border-right: none;
+}
+
+.pageJogo .pageJogoLabel
+{
+    margin-top: 0.75vh;
+    margin-left: 1%;
+    font-size: 2vh;
+}
+
+/* #endregion */
+
+/* #region .pageWin */
+
+.pageWin
+{
+    position: absolute;
+    width: 20vw;
+    margin-top: 2%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d141b;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 5px solid #080e14;
+    text-align: center;
+}
+
+.pageWin h1
+{
+    margin-top: 0.5vh;
+    text-align: center;
+}
+
+.pageWin h2
+{
+    margin-top: 1vh;
+    font-size: 4vh;
+}
+
+.pageWin .pageWinName
+{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.pageWin .pageWinResgatar
+{
+    position: relative;
+    width: 70%;
+    height: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1d65b8;
+    color: white;
+    border: 0;
+    font: inherit;
+    font-weight: bolder;
+    font-size: 2vw;
+    
+    margin-top: 2vh;
+}
+
+.pageWin .pageWinResgatar:hover
+{
+    background-color: #175194;
+}
+
+/* #endregion */
+
+/* #region .pageDef */
+
+.pageDef
+{
+    position: absolute;
+    width: 30vw;
+    margin-top: 2%;
+    padding: 10px;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0d141b;
+    border: 5px solid #080e14;
+    padding: 20px;
+}
+
+.pageDef h1
+{
+    text-align: center;
+}
+
+.pageDef h2
+{
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.pageDef .pageDefCloseBtn
+{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    background-color: #f73535;
+    
+}
+
+.pageDef .pageDefCloseBtn:hover
+{
+    background-color: #cd2b2b;
+}
+
+.pageDef .pageDefCloseBtn img
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pageDef .pageDefName
+{
+    display: flex;
+    height: 5vh;
+    width: 80%;
+    align-items: center;
+}
+
+.pageDef .pageDefName input
+{
+    width: 80%;
+    height: 100%;
+    border: 0;
+    background-color: #060a0e;
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    font: inherit;
+    font-size: 1vw;
+}
+
+.pageDef .pageDefName label
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 1.25vw;
+    width: 50%;
+    font-weight: 300;
+}
+
+.pageDef .pageDefLabelValue
+{
+    display: flex;
+    height: 5vh;
+    width: 80%;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.pageDef .pageDefLabelValue label
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.25vw;
+    width: 70%;
+    font-weight: 300;
+}
+
+.pageDef .pageDefLabelValue .pageDefLabelValueUnit
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageDef .pageDefLabelValue .pageDefLabelValueUnit input
+{
+    width: 80%;
+    height: 100%;
+    font-size: 150%;
+    border: 0;
+    background-color: #060a0e;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font: inherit;
+    font-size: 1vw;
+}
+
+.pageDef .pageDefLabelValue .pageDefLabelValueUnit label
+{
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: x-large;
+    width: 20%;
+    font-weight: 300;
+}
+
+.pageDef .pageDefGridNotes
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    position: relative;
+    left: 50.5%;
+    transform: translateX(-50%);
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    width: 95%;
+}
+
+.pageDef .pageDefGridNotes .pageDefGridElem
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.pageDef button
+{
+    width: 20%;
+    height: 100%;
+    margin-left: 10%;
+    background-color: #1d65b8;
+    color: white;
+    border: 0;
+}
+
+.pageDef button:hover
+{
+    background-color: #175194;
+}
+
+.pageDef button img
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* #endregion */
+
+.eHidden { display: none !important; }
+
+/* #region .pageFooter */
+
+.pageFooter
+{
+    position: fixed;
+    background-color: #0d141b;
+    bottom: 0%;
+    right: 0%;
+    height: 7vh;
+    width: 20vw;
+}
+
+.pageFooter label
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1vw;
+    padding-left: 2vh;
+}
+
+/* #endregion */
+
+@font-face {
+    font-family: 'Momo Trust Sans';
+    src: url(../fonts/Momo_Trust_Sans/MomoTrustSans-VariableFont_wght.ttf);
+}
