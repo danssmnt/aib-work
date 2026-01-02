@@ -1,0 +1,160 @@
+body
+{
+    font-family: Inter;
+    background-color: #252525;
+    color: white;
+    margin: 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+input 
+{
+    background-color: #18181860;
+    color: white;
+    border: 0px;
+    font: inherit;
+    height: 100%;
+    font-size: 2cqh;
+    padding-left: 3%;
+}
+
+button
+{
+    background-color: #181818;
+    color: white;
+    border: 0px;
+    font: inherit;
+    height: 100%;
+    font-size: 2cqh;
+    cursor: pointer;
+}
+
+label
+{
+    font-size: 2cqh;
+}
+
+.input2Buttons
+{
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 6vh;
+    min-width: 450px;
+    width: 30%;
+    align-items: center;
+}
+
+.input2Buttons label
+{
+    width: 25%;
+}
+
+.input2Buttons input
+{
+    width: 20%;
+    margin-right: 5%;
+}
+
+.input2Buttons button
+{
+    width: 15%;
+    margin-right: 2%;
+}
+
+.numOutput
+{
+    display: grid;
+    gap: 10px;
+    height: 30vh;
+}
+
+.numOutput .numOutputElement
+{
+    display: inline-flex;
+    height: 100%;
+    min-width: 300px;
+    width: 30%;
+    align-items: center;
+    gap: 2%;
+}
+
+.numOutput .numOutputElement input
+{
+    width: 60%;
+    background-color: #18181840;
+}
+
+.numOutput .numOutputElement .numOutputName
+{
+    width: 25%;
+    cursor: pointer;
+}
+
+.numOutput .numOutputElement .numOutputTime
+{
+    width: 18%;
+    white-space: nowrap;
+}
+
+.inputButton
+{
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 6vh;
+    min-width: 300px;
+    width: 20%;
+    align-items: center;
+}
+
+.inputButton input
+{
+    width: 70%;
+}
+
+.inputButton button
+{
+    width: 20%;
+    margin-left: auto;
+}
+
+.fatorialOutput
+{
+    display: inline-flex;
+    height: 5vh;
+    min-width: 300px;
+    width: 20%;
+    align-items: center;
+    gap: 2%;
+}
+
+.fatorialOutput input
+{
+    width: 70%;
+    background-color: #18181840;
+}
+
+.fatorialOutput label
+{
+    width: 30%;
+    white-space: nowrap;
+}
+
+footer
+{
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    font-size: 1.5cqh;
+}
+
+@font-face
+{
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter_Variable.ttf);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Padrões com JavaScript</title>
+    <link rel="icon" type="image/svg" href="imagens/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Padrões com JavaScript</h1>
+    <div class="TextAreaSettings">
+        <div class="TextAreaLeftSetting">
+            <label>Altura da figura: </label>
+            <input class="TextAreaSettingsNumber" oninput="alturaInputUpdate()" placeholder="7" id="figuraAltura" onkeypress="return isNumberKey(event)">
+        </div>
+        <button onclick="writeString('')">Limpar Figura</button>
+        <button onclick="copyTextArea()">Copiar Figura</button>
+        <div class="TextAreaRightSetting">
+            <label>Desenhar com: </label>
+            <input class="TextAreaSettingsChar" maxlength="1" placeholder="*" id="charDraw">
+        </div>
+    </div>
+    <div class="TextArea" id="textArea">
+    </div>
+    <div class="TextAreaButtons">
+        <button onclick="genQuadrado()">Quadrado</button>
+        <button onclick="genQuadradoOco()">Quadrado Oco</button>
+        <button onclick="genTrianguloRetangulo()">Triângulo Retangulo</button>
+        <button onclick="genTrianguloEsquerdo()">Triângulo Esquerdo</button>
+        <button onclick="genTrianguloDescendente()">Triângulo Descendente</button>
+        <button onclick="genTrianguloOco()">Triângulo Oco</button>
+        <button onclick="genPiramide()">Pirâmide</button>
+        <button onclick="genPiramideInvertida()">Pirâmide Invertida</button>
+        <button onclick="genPiramideOca()">Pirâmide Oca</button>
+        <button onclick="genDiamante()">Diamante</button>
+        <button onclick="genDiamanteOco()">Diamante Oco</button>
+        <button onclick="genAmpulheta()">Ampulheta</button>
+        <button onclick="genPascalDireito()">Pascal Direito</button>
+        <button onclick="genPascalEsquerdo()">Pascal Esquerdo</button>
+        <button onclick="genCoracao()">Coração</button>
+        <button onclick="genArvoreNatal()">Árvore de Natal</button>
+    </div>
+    <div class="footerGradient"></div>
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

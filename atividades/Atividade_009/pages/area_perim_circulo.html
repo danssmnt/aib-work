@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Área e Perímetro de um Círculo</title>
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="site_header">
+        <a href="../index.html">
+            <img src="../imagens/icon_home.webp">
+        </a>
+        <h1>Área e Perímetro de um Círculo</h1>
+    </div>
+    <hr>
+    <form class="form2" name="Input">
+        <h2>Input</h2>
+        <label>Raio: </label>
+        <input type="number" placeholder="Raio" id="raio_input" oninput="area_perim_cir_update()" onkeypress="return isDecimalKey(event)">
+        <label>m</label>
+    </form>
+    <hr>
+    <form class="form2" name="Output">
+        <h2>Output</h2>
+        <label>Área: </label>
+        <input class="right" type="text" placeholder="Área" id="area_output" disabled>
+        <label>m²</label>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('area_output').value + 'm²')">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Perímetro: </label>
+        <input class="right" type="text" placeholder="Perímetro" id="perimetro_output" disabled>
+        <label>m</label>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('perimetro_output').value + 'm')">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

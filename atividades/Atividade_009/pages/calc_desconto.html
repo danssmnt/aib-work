@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora de Desconto</title>
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="site_header">
+        <a href="../index.html">
+            <img src="../imagens/icon_home.webp">
+        </a>
+        <h1>Calculadora de Desconto</h1>
+    </div>
+    <hr>
+    <form class="form2" name="ValoresDesc">
+        <h2>Input</h2>
+        <label>Preço: </label>
+        <input type="number" placeholder="Preço" id="preco_input" oninput="calc_desc()" onkeypress="return isDecimalKey(event)">
+        <label>€</label>
+        <div style="margin: 2vh;"></div>
+        <label>Desconto: </label>
+        <input type="number" placeholder="Desconto" id="desconto_input" oninput="calc_desc()" onkeypress="return isNumberKey(event)">
+        <label>%</label>
+    </form>
+    <hr>
+    <form class="form2" name="OutputDesc">
+        <h2>Output</h2>
+        <label>Preço Final: </label>
+        <input class="right" type="text" placeholder="Preço Final" id="preco_output" disabled>
+        <label>€</label>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('preco_output').value + '€')">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

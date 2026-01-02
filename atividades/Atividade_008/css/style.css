@@ -1,0 +1,78 @@
+body {
+    margin-left: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    background-color: #252525;
+    color: white;
+}
+
+body h1 {
+    font-size: 2.5vw;
+    margin: 2vw;
+}
+
+.calc {
+    position: relative;
+    color: white;
+}
+
+.calc input
+{
+    width: 7vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    margin-right: 0.5vw;
+    font-family: inherit;
+    background-color: #181818;
+    border: 2px #101010;
+    color: white;
+    padding-left: 0.5vw;
+}
+
+.calc a
+{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-right: 0.5vw;
+}
+
+.calc select
+{
+    height: 3vw;
+    width: 3vw;
+    font-size: 1.5vw;
+    margin-right: 0.5vw;
+    background-color: #181818;
+    border: 2px #101010;
+    color: white;
+}
+
+.calc button
+{
+    width: 3vw;
+    height: 3vw;
+    vertical-align: bottom; /* Por alguma razão, o botão ficou mais acima... */
+    background-color: #181818;
+    border: 2px #101010;
+}
+
+.calc button img
+{
+    height: 80%;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 0.8vw;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter_Variable.ttf);
+}

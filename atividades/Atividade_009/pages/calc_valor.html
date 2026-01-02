@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Operações com valores</title>
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="site_header">
+        <a href="../index.html">
+            <img src="../imagens/icon_home.webp">
+        </a>
+        <h1>Operações com valores</h1>
+    </div>
+    <hr>
+    <form class="form2" name="Input">
+        <h2>Input</h2>
+        <label>Valor: </label>
+        <input type="number" placeholder="Valor" id="valor_input" oninput="calc_valor()" onkeypress="return isDecimalKey(event)">
+    </form>
+    <hr>
+    <form class="form2" name="Output">
+        <h2>Output</h2>
+        <label>Metade: </label>
+        <input class="right" type="text" placeholder="Metade" id="metade_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('metade_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Dobro: </label>
+        <input class="right" type="text" placeholder="Dobro" id="dobro_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('dobro_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Quadrado: </label>
+        <input class="right" type="text" placeholder="Quadrado" id="quadrado_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('quadrado_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <div style="margin: 2vh;"></div>
+        <label>Cubo: </label>
+        <input class="right" type="text" placeholder="Cubo" id="cubo_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('cubo_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

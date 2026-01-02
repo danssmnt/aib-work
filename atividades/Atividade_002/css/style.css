@@ -1,0 +1,30 @@
+.persons_page {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 2%;
+}
+
+.person_page {
+    border-style: solid;
+    border-radius: 1;
+    border-color: black;
+    height: auto;
+    width: 300px;
+}
+
+.image_center {
+    padding-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../Roboto/static/Roboto-Regular.ttf);
+}
+
+.text_center {
+    text-align: center;
+    font-family: roboto;
+}

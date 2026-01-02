@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conversor de Idade</title>
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="site_header">
+        <a href="../index.html">
+            <img src="../imagens/icon_home.webp">
+        </a>
+        <h1>Conversor de Idade</h1>
+    </div>
+    <hr>
+    <form class="form2" name="IdadeAnosDias">
+        <h2>Anos ---&gt; Dias</h2>
+        <label>Anos: </label>
+        <input type="number" placeholder="Idade" id="anos_input" oninput="conv_idade_anos()" onkeypress="return isNumberKey(event)">
+        <div style="margin: 2vh;"></div>
+        <label>Dias: </label>
+        <input type="text" placeholder="Dias" id="dias_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('dias_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+    <hr>
+    <form class="form2" name="IdadeDiasAnos">
+        <h2>Dias ---&gt; Anos</h2>
+        <label>Dias: </label>
+        <input type="number" placeholder="Idade" id="dias_input" oninput="conv_idade_dias()" onkeypress="return isNumberKey(event)">
+        <div style="margin: 2vh;"></div>
+        <label>Anos: </label>
+        <input type="text" placeholder="Anos" id="anos_output" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('anos_output').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

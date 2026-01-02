@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Processamento de Números</title>
+    <link rel="icon" type="image/webp" href="imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Processamento de Números</h1>
+    <hr>
+    <form name="NúmerosGerar">
+        <div class="input2Buttons">
+            <label>Primeiros:</label>
+            <input type="number" placeholder="Quantidade" id="numNumbersInput" onkeypress="return isNumberKey(event)">
+            <button type="button" onclick="gerarNumeros()">Gerar</button>
+            <button type="button" onclick="clearOutput()">Limpar</button>
+        </div>
+        <div class="numOutput">
+            <div class="numOutputElement">
+                <label class="numOutputName" onclick="copyElemText('naturaisOutput')">Naturais: </label>
+                <input id="naturaisOutput" disabled>
+                <label class="numOutputTime" id="naturaisOutputTime"></label>
+            </div>
+            <div class="numOutputElement">
+                <label class="numOutputName" onclick="copyElemText('paresOutput')">Pares: </label>
+                <input id="paresOutput" disabled>
+                <label class="numOutputTime" id="paresOutputTime"></label>
+            </div>
+            <div class="numOutputElement">
+                <label class="numOutputName" onclick="copyElemText('imparesOutput')">Ímpares: </label>
+                <input id="imparesOutput" disabled>
+                <label class="numOutputTime" id="imparesOutputTime"></label>
+            </div>
+            <div class="numOutputElement">
+                <label class="numOutputName" onclick="copyElemText('mul3Output')">Múltiplos de 3: </label>
+                <input id="mul3Output" disabled>
+                <label class="numOutputTime" id="mul3OutputTime"></label>
+            </div>
+            <div class="numOutputElement">
+                <label class="numOutputName" onclick="copyElemText('div12Output')">Divisores de 12: </label>
+                <input id="div12Output" disabled>
+                <label class="numOutputTime" id="div12OutputTime"></label>
+            </div>
+        </div>
+    </form>
+    <hr>
+    <form name="FatorialGerar">
+        <h2>Fatorial</h2>
+        <div class="input2Buttons">
+            <input type="number" placeholder="Input" id="fatorialInput" onkeypress="return isNumberKey(event)">
+            <button type="button" onclick="gerarFatorial()">Gerar</button>
+            <button type="button" onclick="copyElemText('fatorialNumOutput')">Copiar</button>
+        </div>
+        <div class="fatorialOutput">
+            <input placeholder="Output" id="fatorialNumOutput" disabled>
+            <label id="fatorialNumOutputTime"></label>
+        </div>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

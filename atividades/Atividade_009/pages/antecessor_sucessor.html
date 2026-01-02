@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Antecessor e sucessor de um número</title>
+    <link rel="icon" type="image/webp" href="../imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="site_header">
+        <a href="../index.html">
+            <img src="../imagens/icon_home.webp">
+        </a>
+        <h1>Antecessor e Sucessor de um Número</h1>
+    </div>
+    <hr>
+    <form class="form1" name="AntecessorSucessor">
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('antecessor_input').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+        <input type="text" placeholder="Antecessor" id="antecessor_input" disabled>
+        <input type="number" placeholder="Núm." id="ant_suc_input" oninput="antecessor_sucessor_update()" onkeypress="return isNumberKey(event)">
+        <input class="right" type="text" placeholder="Sucessor" id="sucessor_input" disabled>
+        <button type="button" onclick="copy_result_clipboard(document.getElementById('sucessor_input').value)">
+            <img src="../imagens/icon_copy.webp">
+        </button>
+    </form>
+
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>

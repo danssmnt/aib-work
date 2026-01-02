@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>4 Operadores de Base</title>
+    <link rel="icon" type="image/webp" href="imagens/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <div class="calc">
+        <input id="num1" type="number" placeholder="Num." oninput="update()" onkeypress="return isNumberKey(event)">
+        <select id="operator" oninput="update()">
+            <option>+</option>
+            <option>-</option>
+            <option>x</option>
+            <option>÷</option>
+        </select>
+        <input id="num2" type="number" placeholder="Num." oninput="update()" onkeypress="return isNumberKey(event)">
+        <a>=</a>
+        <input id="result" placeholder="Res." readonly>
+        <button onclick="copy_result_clipboard()">
+            <img src="imagens/icon_copy.webp">
+        </button>
+    </div>
+    <footer>Website feito por Daniel Munteanu - 12G Aplicações Informáticas B</footer>
+</body>
+</html>
