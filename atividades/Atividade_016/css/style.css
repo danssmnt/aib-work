@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: Inter;
+    background-color: #252525;
+    color: white;
+}
+
+body h1 {
+    font-size: 4cqh;
+    text-align: center;
+    margin: 1vw;
+    pointer-events: none;
+    -webkit-user-select: none;  /* Safari */
+    -ms-user-select: none;      /* IE 10 and IE 11 */
+    user-select: none;          /* Standard syntax */
+}
+
+.buttonPages 
+{
+    margin-top: 5vh;
+    font-size: 5.0cqh;
+    font-weight: bold;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-bottom: 10vh;
+    width: 95%;
+    gap: 10px;
+}
+
+.buttonPages button 
+{
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    background-color: #181818;
+    border: 0;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.pageFooter
+{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    background-color: #0a0a0a;
+    margin-top: 80vh;
+    position: relative;
+    bottom: 0;
+    font-size: 2.0cqh;
+}
+
+.pageFooter .pageFooterTop
+{
+    height: calc(100% - 5vh);
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.pageFooter .pageFooterTop:first-child
+{
+    margin-left: 1vw;
+}
+
+.pageFooter .pageFooterTop .pageFooterElement h1
+{
+    text-align: start;
+    margin-left: 0;
+    font-size: 3cqh;
+}
+
+.pageFooter .pageFooterTop .pageFooterElement
+{
+    text-align: start;
+}
+
+.pageFooter .pageFooterTop .pageFooterElement a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pageFooter .pageFooterTop .pageFooterElement .pageFooterElementImages
+{
+    display: grid;
+    gap: 10px;
+    height: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 70px));
+}
+
+.pageFooter .pageFooterTop .pageFooterElement .pageFooterElementImages img
+{
+    height: 25%;
+}
+
+.pageFooter .pageFooterBottom
+{
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 100%;
+    background-color: #363636;
+    position: relative;
+    bottom: 0;
+    font-size: 2.0cqh;
+    text-align: center;
+    align-content: center;
+    pointer-events: none;
+}
+
+.triangulosMainContent
+{
+    height: 40vh;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+}
+
+.triangulosMainContent .triangulosMainContentInputsGrid
+{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.triangulosMainContent .triangulosMainContentInputsGrid .triangulosMainContentInputs
+{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+.MainContentInputLabeled
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainContentInputLabeled label
+{
+    width: 100%;
+    height: 20%;
+    font-weight: bold;
+    font-size: 2cqh;
+}
+
+.MainContentInputLabeled .MainContentInput
+{
+    width: 100%;
+    min-width: 200px;
+    height: 80%;
+}
+
+.MainContentInputLabeled .MainContentInput input
+{
+    width: 60%;
+    height: 50%;
+    font: inherit;
+    background-color: #252525;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding-left: 10px;
+    font-size: xx-large;
+}
+
+.MainContentInputLabeled .MainContentInput label
+{
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.triangulosMainContent .triangulosMainContentOutput
+{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.triangulosMainContent .triangulosMainContentOutput canvas
+{
+    background-color: #252525;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+}
+
+.triangulosMainContent .triangulosMainContentOutput label
+{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2cqh;
+    font-weight: bold;
+}
+
+.anosMainContent
+{
+    height: 40vh;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.anosMainContent .anosInput
+{
+    height: 50%;
+    width: 20%;
+}
+
+.anosMainContent .anosOutput
+{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+.anosMainContent .anosOutput h1
+{
+    align-items: flex-start;
+}
+
+.anosMainContent .anosOutput .anosOutputCheckBoxes
+{
+    align-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+}
+
+.MainContentCheckboxLabeled
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.MainContentCheckboxLabeled img
+{
+    width: 10%;
+}
+
+.MainContentCheckboxLabeled label
+{
+    font-size: 2cqh;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter_Variable.ttf);
+}

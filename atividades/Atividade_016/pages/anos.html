@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Identificador de Anos</title>
+    <link rel="icon" type="image/svg" href="../imagens/year.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <h1>Identificador de Anos</h1>
+
+    <div class="anosMainContent">
+        <div class="anosInput">
+            <h1>Input</h1>
+            <div class="MainContentInputLabeled">
+                <label>Ano</label>
+                <div class="MainContentInput">
+                    <input type="number" placeholder="e.g. 2026" id="anoInput" oninput="anoInputUpdate()" onkeypress="return isDecimalKey(event)">
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 10vh;"></div>
+        <div class="anosOutput">
+            <h1>Output</h1>
+            <div class="anosOutputCheckBoxes">
+                <div class="MainContentCheckboxLabeled">
+                    <img src="../imagens/checkbox_off.png" id="checkboxAnoBissexto">
+                    <label>Bissexto</label>
+                </div>
+                <div class="MainContentCheckboxLabeled">
+                    <img src="../imagens/checkbox_off.png" id="checkboxAnoHuluculu">
+                    <label>Huluculu</label>
+                </div>
+                <div class="MainContentCheckboxLabeled">
+                    <img src="../imagens/checkbox_off.png" id="checkboxAnoBulukulu">
+                    <label>Bulukulu</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pageFooter">
+        <div class="pageFooterTop">
+            <div class="pageFooterElement">
+                <h1>Sobre</h1>
+                <label>Website desenvolvido no âmbito da disciplina de Aplicações Informáticas B 12G (Atividade 016)</label>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Privacidade</h1>
+                <a href="https://example.com/">Política de Privacidade (RGPD)</a>
+                <br>
+                <a href="https://example.com/">Direitos de Autor</a>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Outros</h1>
+                <a href="manual_instrucoes.pdf">Manual de Instruções</a>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Websites</h1>
+                <div class="pageFooterElementImages">
+                    <a href="https://github.com/danssmnt">
+                        <img src="../imagens/github.webp" href="https://github.com/danssmnt">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pageFooterBottom">@ 2026 Copyright Daniel Munteanu</div>
+    </div>
+</body>
+</html>
