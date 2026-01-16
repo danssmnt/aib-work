@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arrays em JavaScript</title>
+    <link rel="icon" type="image/svg" href="imagens/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Arrays em JavaScript</h1>
+    <div class="mainOutput" id="mainOutput"></div>
+    <div class="mainButtons">
+        <div class="buttonLabel">
+            <button onclick="CreateArray()">Criar array</button>
+            <label id="lblCreateArray" hidden>Criado!</label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="GetArraySize()">Tamanho do Array</button>
+            <label id="lblArraySize" hidden>Tamanho: </label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="GetArrayFirstElement()">1º Elemento do Array</button>
+            <label id="lblArrayElement" hidden>1º Elemento: </label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="GetArrayLastElement()">Último Elemento do Array</button>
+            <label id="lblArrayLastElem" hidden>Último Elemento: </label>
+        </div>
+        <div class="inputButton">
+            <input type="number" id="inpElemChangeIndex" placeholder="Index" onkeypress="return isDigitKey(event)">
+            <input type="number" id="inpElemChangeValue" placeholder="Value" onkeypress="return isDigitKey(event)">
+            <button onclick="ChangeArrayElement()">Alterar Elemento</button>
+        </div>
+        <div class="inputButton">
+            <input type="number" id="inpElemRemoveIndex" placeholder="Index" onkeypress="return isDigitKey(event)">
+            <button onclick="RemoveArrayElement()">Remover Elemento</button>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="ShuffleMainArray()">Baralhar Array</button>
+            <label id="lblShuffleArray" hidden>Baralhado!</label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="Output2em2Array()">Listar de 2 em 2</button>
+            <label id="lblArray2" hidden>Computado com sucesso!</label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="GetArrayInfo()">Listar características do Array</button>
+            <label id="lblArrayStats" hidden>Soma: | Média: | Mediana: | Min.: | Máx.: </label>
+        </div>
+        <div class="inputButton">
+            <input type="number" id="inpValInstancesValue" placeholder="Value" onkeypress="return isDigitKey(event)">
+            <button onclick="GetNumberInstancesValueArray()">Verif. Repetido</button>
+            <label id="lblArrayInstances" hidden>Existem %d instâncias deste número na array!</label>
+        </div>
+        <div class="buttonLabel">
+            <button onclick="GetClonedValuesArray()">Verificar Números Repetidos</button>
+            <label id="lblArrayNumInstance" hidden>Número %d é repetido %d vezes.</label>
+        </div>
+        <div class="inputButton">
+            <input type="number" id="impSizeArrayNum100" placeholder="Tamanho" onkeypress="return isDigitKey(event)">
+            <button onclick="GenerateArrayNum100()">Números entre -100 e 100</button>
+            <label id="lblArrayNum100" hidden>Feito!</label>
+        </div>
+    </div>
+    <div class="pageFooter">
+        <div class="pageFooterTop">
+            <div class="pageFooterElement">
+                <h1>Sobre</h1>
+                <label>Website desenvolvido no âmbito da disciplina de Aplicações Informáticas B 12G</label>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Privacidade</h1>
+                <label>Política de Privacidade (RGPD)</label>
+                <br>
+                <label>Direitos de Autor</label>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Websites</h1>
+                <div class="pageFooterElementImages">
+                    <img src="imagens/github.webp">
+                </div>
+            </div>
+        </div>
+        <div class="pageFooterBottom">@ 2026 Copyright Daniel Munteanu</div>
+    </div>
+</body>
+</html>
