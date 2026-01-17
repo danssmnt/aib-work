@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desafio FizzBuzz</title>
+    <link rel="icon" type="image/svg" href="imagens/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body id="mainBody">
+    <h1>Desafio FizzBuzz</h1>
+    <div class="mainContent">
+        <div class="mainContentLeft">
+            <div class="mainContentLeftElem">
+                <h1>Input Manual</h1>
+                <div class="inputButton">
+                    <input type="number" id="inpManualFBNumber" placeholder="Número" onkeypress="return isDigitKey(event)">
+                    <button onclick="manualInputInsert()" id="inpManualFBButton"><img src="imagens/icon_enter.svg"></button>
+                </div>
+            </div>
+            <div class="mainContentLeftElem">
+                <h1>Input Automático Aleatorizado</h1>
+                <div class="inputButton">
+                    <input type="number" id="inpAutoFBQuantity" placeholder="Quantidade" onkeypress="return isDigitKey(event)">
+                    <button onclick="autoInputInsert()" id="inpAutoFBButton"><img src="imagens/icon_enter.svg"></button>
+                </div>
+            </div>
+        </div>
+        <div class="mainContentRight">
+            <h1>Tabela Output</h1>
+            <table class="mainContentOutputTable" id="tableMainOutput">
+            <tr class="mainContentOutputTableHeader">
+                <td>Número</td>
+                <td>Output</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div class="pageFooter">
+        <div class="pageFooterTop">
+            <div class="pageFooterElement">
+                <h1>Sobre</h1>
+                <label>Website desenvolvido no âmbito da disciplina de Aplicações Informáticas B 12G</label>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Privacidade</h1>
+                <a href="https://example.com/">Política de Privacidade (RGPD)</a>
+                <br>
+                <a href="https://example.com/">Direitos de Autor</a>
+            </div>
+            <div class="pageFooterElement">
+                <h1>Websites</h1>
+                <div class="pageFooterElementImages">
+                    <a href="https://github.com/danssmnt">
+                        <img src="imagens/github.webp" href="https://github.com/danssmnt">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pageFooterBottom">@ 2026 Copyright Daniel Munteanu</div>
+    </div>
+</body>
+</html>
